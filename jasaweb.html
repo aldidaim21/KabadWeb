@@ -101,6 +101,38 @@
         padding-top: 50px;
       }
 
+      .portofolio-card {
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .portofolio-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .portofolio-card img {
+        border-radius: 10px 10px 0 0;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .portofolio-card .card-body {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .portofolio-card .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .portofolio-card .card-text {
+        font-size: 0.9rem;
+        color: #6c757d;
+      }
       @media (max-width: 768px) {
         .main h1 {
           font-size: 2.5rem;
@@ -213,7 +245,7 @@
               <li>Keamanan: SSL Gratis melalui GitHub</li>
               <li>Fitur: Tampilan responsif, Galeri Karya</li>
             </ul>
-            <h6 class="text-danger">Harga: Rp 0 (Gratis)</h6>
+            <h6 class="text-danger">Harga: Rp 50.000</h6>
             <a class="btn btn-danger w-100" href="">Pelajari Lebih Lanjut</a>
           </div>
         </div>
@@ -281,6 +313,67 @@
         </div>
       </div>
     </div>
+
+    <section id="portofolio" class="section">
+      <div class="container">
+        <h2 class="text-center mb-5">Portofolio Kami</h2>
+        <div class="row">
+          <!-- Portofolio 1 -->
+          <div class="col-md-4 mb-4">
+            <div class="card portofolio-card">
+              <img
+                src="img/image1.png"
+                class="card-img-top"
+                alt="Portofolio 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Website Toko Online</h5>
+                <p class="card-text">
+                  Website toko online dengan tampilan modern dan fitur
+                  pembayaran terintegrasi.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portofolio 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card portofolio-card">
+              <img
+                src="img/Design2.png"
+                class="card-img-top"
+                alt="Portofolio 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Website Portofolio Pribadi</h5>
+                <p class="card-text">
+                  Website portofolio pribadi dengan desain minimalis dan
+                  responsif.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portofolio 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card portofolio-card">
+              <img
+                src="img/image2.png"
+                class="card-img-top"
+                alt="Portofolio 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dashboard Admin</h5>
+                <p class="card-text">
+                  Dashboard admin dengan fitur manajemen pengguna dan analitik
+                  data.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
